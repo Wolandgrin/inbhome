@@ -1,10 +1,8 @@
 package steps;
 
 import cucumber.api.DataTable;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
@@ -28,10 +26,10 @@ public class MyStepdefs {
         $(byId(signIn)).click();
     }
 
-    @Then("^Login page url \"([^\"]*)\" opens$")
-    public void loginPageUrlOpens(String url) throws Throwable {
-        assertThat(url(), containsString(url));
-    }
+//    @Then("^Login page url \"([^\"]*)\" opens$")
+//    public void loginPageUrlOpens(String url) throws Throwable {
+//        assertThat(url(), containsString(url));
+//    }
 
     @Given("^User navigates to the login page \"([^\"]*)\"$")
     public void userNavigatesToTheLoginPage(String url) throws Throwable {
@@ -51,10 +49,10 @@ public class MyStepdefs {
         $(byName(submit)).shouldBe(visible).click();
     }
 
-    @Then("^Page with url \"([^\"]*)\" opens$")
-    public void pageWithUrlOpens(String url) throws Throwable {
-        assertThat(url(), containsString(url));
-    }
+//    @Then("^Page with url \"([^\"]*)\" opens$")
+//    public void pageWithUrlOpens(String url) throws Throwable {
+//        assertThat(url(), containsString(url));
+//    }
 
     @Given("^Administrator is on the \"([^\"]*)\" page logged in from \"([^\"]*)\" using \"([^\"]*)\" with:$")
     public void administratorIsLoggedInFromPageUsingWith(String main, String url, String submit, DataTable table) throws Throwable {
@@ -71,11 +69,11 @@ public class MyStepdefs {
     public void userPressesLink(String link) throws Throwable {
         $(byText(link)).click();
     }
-
-    @Then("^Appropriate page \"([^\"]*)\" opens$")
-    public void appropriatePageOpensContainingUserId(String url) throws Throwable {
-        assertThat(url(), containsString(url));
-    }
+//
+//    @Then("^Appropriate page \"([^\"]*)\" opens$")
+//    public void appropriatePageOpensContainingUserId(String url) throws Throwable {
+//        assertThat(url(), containsString(url));
+//    }
 
     @And("^Page contains correct userName \"([^\"]*)\"$")
     public void pageContainsCorrectUserName(String userName) throws Throwable {
@@ -96,7 +94,6 @@ public class MyStepdefs {
     public void userPressesLinkHavingIdOnTheOnTheLeftMenuBar(String title, String id) throws Throwable {
         $(byId(id)).click();
     }
-
 
     @Then("^Page with URL \"([^\"]*)\" opens$")
     public void pageWithURLOpens(String url) throws Throwable {
