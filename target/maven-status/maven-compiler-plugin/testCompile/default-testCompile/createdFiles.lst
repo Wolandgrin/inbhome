@@ -1,2 +1,2 @@
-runners\SmokeTest.class
-steps\MyStepdefs.class
+steps/MyStepdefs.class
+runners/SmokeTest.class
