@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runners.SmokeTest" time="0.052" tests="28" errors="0" skipped="0" failures="0">
+<testsuite name="runners.SmokeTest" time="0.029" tests="28" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/local/java/jdk1.8.0_121/jre/lib/amd64"/>
@@ -59,31 +59,31 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Login page opens correctly" time="0.007"/>
+  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Login page opens correctly" time="0.004"/>
   <testcase name="When User presses Sign in link with id &quot;_ctl0__ctl0_LoginLink&quot;" classname="Scenario: Login page opens correctly" time="0"/>
-  <testcase name="Then Login page url &quot;http://demo.testfire.net/bank/login.aspx&quot; opens" classname="Scenario: Login page opens correctly" time="0"/>
-  <testcase name="Scenario: Login page opens correctly" classname="Scenario: Login page opens correctly" time="0.003"/>
-  <testcase name="Given User navigates to the login page &quot;http://demo.testfire.net/bank/login.aspx&quot;" classname="Scenario: Admin could login successfully" time="0"/>
+  <testcase name="Then Login page url &quot;http://demo.testfire.net/bank/login.aspx&quot; opens" classname="Scenario: Login page opens correctly" time="0.003"/>
+  <testcase name="Scenario: Login page opens correctly" classname="Scenario: Login page opens correctly" time="0.008"/>
+  <testcase name="Given User navigates to the login page &quot;http://demo.testfire.net/bank/login.aspx&quot;" classname="Scenario: Admin could login successfully" time="0.001"/>
   <testcase name="When User enters following credentials:" classname="Scenario: Admin could login successfully" time="0.001"/>
   <testcase name="And User presses button with name &quot;btnSubmit&quot;" classname="Scenario: Admin could login successfully" time="0"/>
-  <testcase name="Then Page with url &quot;http://demo.testfire.net/bank/main.aspx&quot; opens" classname="Scenario: Admin could login successfully" time="0"/>
+  <testcase name="Then Page with url &quot;http://demo.testfire.net/bank/main.aspx&quot; opens" classname="Scenario: Admin could login successfully" time="0.001"/>
   <testcase name="Scenario: Admin could login successfully" classname="Scenario: Admin could login successfully" time="0.002"/>
-  <testcase name="Given Administrator is on the &quot;main&quot; page logged in from &quot;http://demo.testfire.net/bank/login.aspx&quot; using &quot;btnSubmit&quot; with:" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
+  <testcase name="Given Administrator is on the &quot;main&quot; page logged in from &quot;http://demo.testfire.net/bank/login.aspx&quot; using &quot;btnSubmit&quot; with:" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
   <testcase name="When User presses &quot;View Application Values&quot; link" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
-  <testcase name="Then Appropriate page &quot;http://demo.testfire.net/admin/application.aspx&quot; opens" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.004"/>
-  <testcase name="And Page contains correct userName &quot;admin&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
+  <testcase name="Then Appropriate page &quot;http://demo.testfire.net/admin/application.aspx&quot; opens" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
+  <testcase name="And Page contains correct userName &quot;admin&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
   <testcase name="And page contains correct firstName &quot;admin&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
-  <testcase name="And page contains correct lastName &quot;User&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
+  <testcase name="And page contains correct lastName &quot;User&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
   <testcase name="Scenario: &quot;View Application Values&quot; page is accessible and correct" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
   <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Personal information page opens correctly" time="0"/>
   <testcase name="When User presses &quot;PERSONAL&quot; link having id &quot;_ctl0__ctl0_Content_CatLink1&quot; on the on the left menu bar" classname="Scenario: Personal information page opens correctly" time="0.001"/>
-  <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal.htm&quot; opens" classname="Scenario: Personal information page opens correctly" time="0"/>
-  <testcase name="Scenario: Personal information page opens correctly" classname="Scenario: Personal information page opens correctly" time="0.001"/>
+  <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal.htm&quot; opens" classname="Scenario: Personal information page opens correctly" time="0.001"/>
+  <testcase name="Scenario: Personal information page opens correctly" classname="Scenario: Personal information page opens correctly" time="0.002"/>
   <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Deposit Products page opens correctly" time="0"/>
   <testcase name="When User presses &quot;Deposit Product&quot; link having id &quot;_ctl0__ctl0_Content_MenuHyperLink1&quot; on the on the left menu bar" classname="Scenario: Deposit Products page opens correctly" time="0"/>
-  <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal_deposit.htm&quot; opens" classname="Scenario: Deposit Products page opens correctly" time="0.014"/>
-  <testcase name="Scenario: Deposit Products page opens correctly" classname="Scenario: Deposit Products page opens correctly" time="0.016"/>
-  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Checking page opens correctly" time="0.001"/>
+  <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal_deposit.htm&quot; opens" classname="Scenario: Deposit Products page opens correctly" time="0"/>
+  <testcase name="Scenario: Deposit Products page opens correctly" classname="Scenario: Deposit Products page opens correctly" time="0"/>
+  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Checking page opens correctly" time="0"/>
   <testcase name="When User presses &quot;Checking&quot; link having id &quot;_ctl0__ctl0_Content_MenuHyperLink2&quot; on the on the left menu bar" classname="Scenario: Checking page opens correctly" time="0"/>
   <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal_checking.htm&quot; opens" classname="Scenario: Checking page opens correctly" time="0"/>
   <testcase name="Scenario: Checking page opens correctly" classname="Scenario: Checking page opens correctly" time="0.001"/>

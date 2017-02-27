@@ -45,7 +45,7 @@ formatter.match({
   "location": "MyStepdefs.userNavigatesTo(String)"
 });
 formatter.result({
-  "duration": 7906461691,
+  "duration": 6052041900,
   "status": "passed"
 });
 formatter.match({
@@ -58,7 +58,7 @@ formatter.match({
   "location": "MyStepdefs.userPressesSignInLink(String)"
 });
 formatter.result({
-  "duration": 1211784408,
+  "duration": 1078530519,
   "status": "passed"
 });
 formatter.match({
@@ -71,7 +71,7 @@ formatter.match({
   "location": "MyStepdefs.loginPageUrlOpens(String)"
 });
 formatter.result({
-  "duration": 157402508,
+  "duration": 51364364,
   "status": "passed"
 });
 formatter.scenario({
@@ -128,14 +128,14 @@ formatter.match({
   "location": "MyStepdefs.userNavigatesToTheLoginPage(String)"
 });
 formatter.result({
-  "duration": 402132261,
+  "duration": 418403275,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepdefs.userEntersFollowingCredentials(DataTable)"
 });
 formatter.result({
-  "duration": 1105179026,
+  "duration": 921567587,
   "status": "passed"
 });
 formatter.match({
@@ -148,7 +148,7 @@ formatter.match({
   "location": "MyStepdefs.userPressesButton(String)"
 });
 formatter.result({
-  "duration": 1283192498,
+  "duration": 1006432649,
   "status": "passed"
 });
 formatter.match({
@@ -161,7 +161,7 @@ formatter.match({
   "location": "MyStepdefs.pageWithUrlOpens(String)"
 });
 formatter.result({
-  "duration": 90247103,
+  "duration": 67897778,
   "status": "passed"
 });
 formatter.scenario({
@@ -236,7 +236,7 @@ formatter.match({
   "location": "MyStepdefs.administratorIsLoggedInFromPageUsingWith(String,String,String,DataTable)"
 });
 formatter.result({
-  "duration": 2342358849,
+  "duration": 2126335773,
   "status": "passed"
 });
 formatter.match({
@@ -249,7 +249,7 @@ formatter.match({
   "location": "MyStepdefs.userPressesLink(String)"
 });
 formatter.result({
-  "duration": 831123330,
+  "duration": 798571669,
   "status": "passed"
 });
 formatter.match({
@@ -262,7 +262,7 @@ formatter.match({
   "location": "MyStepdefs.appropriatePageOpensContainingUserId(String)"
 });
 formatter.result({
-  "duration": 70733502,
+  "duration": 46689118,
   "status": "passed"
 });
 formatter.match({
@@ -275,7 +275,7 @@ formatter.match({
   "location": "MyStepdefs.pageContainsCorrectUserName(String)"
 });
 formatter.result({
-  "duration": 405707384,
+  "duration": 379144168,
   "status": "passed"
 });
 formatter.match({
@@ -288,7 +288,7 @@ formatter.match({
   "location": "MyStepdefs.pageContainsCorrectFirstName(String)"
 });
 formatter.result({
-  "duration": 168337354,
+  "duration": 141052412,
   "status": "passed"
 });
 formatter.match({
@@ -301,7 +301,7 @@ formatter.match({
   "location": "MyStepdefs.pageContainsCorrectLastName(String)"
 });
 formatter.result({
-  "duration": 449235567,
+  "duration": 353342116,
   "status": "passed"
 });
 formatter.uri("homePageLinks.feature");
@@ -351,7 +351,7 @@ formatter.match({
   "location": "MyStepdefs.userNavigatesTo(String)"
 });
 formatter.result({
-  "duration": 433105542,
+  "duration": 386616079,
   "status": "passed"
 });
 formatter.match({
@@ -368,7 +368,7 @@ formatter.match({
   "location": "MyStepdefs.userPressesLinkHavingIdOnTheOnTheLeftMenuBar(String,String)"
 });
 formatter.result({
-  "duration": 895661799,
+  "duration": 780829718,
   "status": "passed"
 });
 formatter.match({
@@ -381,7 +381,7 @@ formatter.match({
   "location": "MyStepdefs.pageWithURLOpens(String)"
 });
 formatter.result({
-  "duration": 39367911,
+  "duration": 45199627,
   "status": "passed"
 });
 formatter.scenario({
@@ -417,7 +417,7 @@ formatter.match({
   "location": "MyStepdefs.userNavigatesTo(String)"
 });
 formatter.result({
-  "duration": 436632243,
+  "duration": 344174768,
   "status": "passed"
 });
 formatter.match({
@@ -434,7 +434,7 @@ formatter.match({
   "location": "MyStepdefs.userPressesLinkHavingIdOnTheOnTheLeftMenuBar(String,String)"
 });
 formatter.result({
-  "duration": 1128021570,
+  "duration": 755222624,
   "status": "passed"
 });
 formatter.match({
@@ -447,7 +447,7 @@ formatter.match({
   "location": "MyStepdefs.pageWithURLOpens(String)"
 });
 formatter.result({
-  "duration": 34304622,
+  "duration": 53062171,
   "status": "passed"
 });
 formatter.scenario({
@@ -483,7 +483,7 @@ formatter.match({
   "location": "MyStepdefs.userNavigatesTo(String)"
 });
 formatter.result({
-  "duration": 510916519,
+  "duration": 396594357,
   "status": "passed"
 });
 formatter.match({
@@ -500,7 +500,7 @@ formatter.match({
   "location": "MyStepdefs.userPressesLinkHavingIdOnTheOnTheLeftMenuBar(String,String)"
 });
 formatter.result({
-  "duration": 745371165,
+  "duration": 705553816,
   "status": "passed"
 });
 formatter.match({
@@ -513,7 +513,7 @@ formatter.match({
   "location": "MyStepdefs.pageWithURLOpens(String)"
 });
 formatter.result({
-  "duration": 36167645,
+  "duration": 28717245,
   "status": "passed"
 });
 });
