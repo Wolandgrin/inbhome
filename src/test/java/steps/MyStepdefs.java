@@ -7,9 +7,7 @@ import org.openqa.selenium.By;
 import java.util.List;
 
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byId;
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.url;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -25,11 +23,6 @@ public class MyStepdefs {
     public void userPressesSignInLink(String signIn) throws Throwable {
         $(byId(signIn)).click();
     }
-
-//    @Then("^Login page url \"([^\"]*)\" opens$")
-//    public void loginPageUrlOpens(String url) throws Throwable {
-//        assertThat(url(), containsString(url));
-//    }
 
     @Given("^User navigates to the login page \"([^\"]*)\"$")
     public void userNavigatesToTheLoginPage(String url) throws Throwable {
@@ -49,11 +42,6 @@ public class MyStepdefs {
         $(byName(submit)).shouldBe(visible).click();
     }
 
-//    @Then("^Page with url \"([^\"]*)\" opens$")
-//    public void pageWithUrlOpens(String url) throws Throwable {
-//        assertThat(url(), containsString(url));
-//    }
-
     @Given("^Administrator is on the \"([^\"]*)\" page logged in from \"([^\"]*)\" using \"([^\"]*)\" with:$")
     public void administratorIsLoggedInFromPageUsingWith(String main, String url, String submit, DataTable table) throws Throwable {
         open(url);
@@ -69,11 +57,6 @@ public class MyStepdefs {
     public void userPressesLink(String link) throws Throwable {
         $(byText(link)).click();
     }
-//
-//    @Then("^Appropriate page \"([^\"]*)\" opens$")
-//    public void appropriatePageOpensContainingUserId(String url) throws Throwable {
-//        assertThat(url(), containsString(url));
-//    }
 
     @And("^Page contains correct userName \"([^\"]*)\"$")
     public void pageContainsCorrectUserName(String userName) throws Throwable {
