@@ -15,3 +15,4 @@ Feature: Homepage links function correctly
     Given User navigates to "http://demo.testfire.net/default.aspx"
     When User presses "Checking" link having id "_ctl0__ctl0_Content_MenuHyperLink2" on the on the left menu bar
     Then Page with URL "http://demo.testfire.net/default.aspx?content=personal_checking.htm" opens
+
