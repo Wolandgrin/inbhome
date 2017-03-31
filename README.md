@@ -1,4 +1,4 @@
-inBank automation assessment ReadMe. This automation scenario implements few automated tests checking http://pn.com.ua webpage. Automation is very basic and written on Java with help of Cucumber, Maven and Selenide.
+inBank automation assessment ReadMe. This project implements few automated tests checking some functionality on the http://demo.testfire.net webpage. Automation is very basic and written on Java with help of Cucumber, Maven and Selenide.
 
 How to launch
 
