@@ -15,7 +15,7 @@ Feature: Administrator login and access to administrator pages
     Then Page with URL "http://demo.testfire.net/bank/main.aspx" opens
 
   Scenario: "View Application Values" page is accessible and correct
-    Given Administrator is on the "main" page logged in from "http://demo.testfire.net/bank/login.aspx" using "btnSubmit" with:
+    Given Administrator is logged in with credentials:
       | uid   | passw |
       | admin | admin |
     When User presses "View Application Values" link

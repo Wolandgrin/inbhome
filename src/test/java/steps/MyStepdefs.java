@@ -1,6 +1,7 @@
 package steps;
 
 import cucumber.api.DataTable;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.openqa.selenium.By;
 
@@ -14,6 +15,13 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class MyStepdefs {
+    String loginUrl="http://demo.testfire.net/bank/login.aspx";
+    String btnSubmit="btnSubmit";
+
+    String personal = "_ctl0__ctl0_Content_CatLink1";
+    String depositProduct = "_ctl0__ctl0_Content_MenuHyperLink1";
+    String checking = "_ctl0__ctl0_Content_MenuHyperLink2";
+
     @Given("^User navigates to \"([^\"]*)\"$")
     public void userNavigatesTo(String url) throws Throwable {
         open(url);
@@ -42,15 +50,15 @@ public class MyStepdefs {
         $(byName(submit)).shouldBe(visible).click();
     }
 
-    @Given("^Administrator is on the \"([^\"]*)\" page logged in from \"([^\"]*)\" using \"([^\"]*)\" with:$")
-    public void administratorIsLoggedInFromPageUsingWith(String main, String url, String submit, DataTable table) throws Throwable {
-        open(url);
+    @Given("^Administrator is logged in with credentials:$")
+    public void administratorIsLoggedInFromPageUsingWith(DataTable table) throws Throwable {
+        open(loginUrl);
 
         List<List<String>> data = table.raw();
         $(By.id(data.get(0).get(0))).setValue(data.get(1).get(0));
         $(By.id(data.get(0).get(1))).setValue(data.get(1).get(1));
 
-        $(byName(submit)).shouldBe(visible).click();
+        $(byName(btnSubmit)).shouldBe(visible).click();
     }
 
     @When("^User presses \"([^\"]*)\" link$")
@@ -73,13 +81,23 @@ public class MyStepdefs {
         assertThat($(byText(lastName)).toString(), containsString(lastName));
     }
 
-    @When("^User presses \"([^\"]*)\" link having id \"([^\"]*)\" on the on the left menu bar$")
-    public void userPressesLinkHavingIdOnTheOnTheLeftMenuBar(String title, String id) throws Throwable {
-        $(byId(id)).click();
+    @When("^User presses 'PERSONAL' link on the on the left menu bar$")
+    public void userPressesLinkWithIdOnTheOnTheLeftMenuBar() throws Throwable {
+        $(byId(personal)).click();
     }
 
     @Then("^Page with URL \"([^\"]*)\" opens$")
     public void pageWithURLOpens(String url) throws Throwable {
         assertThat(url(), containsString(url));
+    }
+
+    @When("^User presses 'Deposit Product' link on the on the left menu bar$")
+    public void userPressesDepositProductLinkOnTheOnTheLeftMenuBar() throws Throwable {
+        $(byId(depositProduct)).click();
+    }
+
+    @When("^User presses 'Checking' link on the on the left menu bar$")
+    public void userPressesCheckingLinkOnTheOnTheLeftMenuBar() throws Throwable {
+        $(byId(checking)).click();
     }
 }
